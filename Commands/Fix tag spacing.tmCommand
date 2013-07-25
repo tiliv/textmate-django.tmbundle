@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+echo "$(sed -e's/{\([{%]\) */{\1 /; s/ *\([%}]\)}/ \1}/')"
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>name</key>
+	<string>Fix tag spacing</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>text.html.django</string>
+	<key>uuid</key>
+	<string>CF3E99DA-9770-4278-88B6-E45B2631C4DA</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

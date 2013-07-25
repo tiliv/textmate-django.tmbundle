@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>settings.comment</key>
+		<string>
+    foldingStartMarker = '({% (block(?= ([^\b]+))|comment|filter|for|if|ifchanged|ifequal|ifnotequal)|&lt;(?i:a|head|body|table|thead|tbody|small|tfoot|tr|div|header|article|section|footer|aside|nav|select|fieldset|style|script|ul|ol|li|form|dl|p)\b.*?&gt;)';
+    foldingStopMarker = '({% (endblock \1|endblock|endblocktrans|endcomment|endfilter|endfor|endif|endifchanged|endifequal|endifnotequal) %}|&lt;/(?i:a|head|body|table|thead|tbody|small|tfoot|tr|div|header|article|section|footer|aside|nav|select|fieldset|style|script|ul|ol|li|form|dl|p)\b.*?&gt;)';
+</string>
+		<key>settings.foldingStartMarker</key>
+		<string>{# region\b|{% (block|for|if(changed)?|comment|filter|blocktrans)\b|&lt;(?i:head|body|table|thead|tbody|tfoot|tr|td|div|form|fieldset|select|header|footer|aside|nav|ul|ol|dl|li|p|style|script)\b</string>
+		<key>settings.foldingStopMarker</key>
+		<string>{# endregion\b|{% end(block|for|if(changed)?|comment|filter|blocktrans)\b|&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|td|div|form|fieldset|select|header|footer|aside|nav|ul|ol|dl|li|p|style|script)\b</string>
+	</dict>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>2A28484C-9F36-427B-8CFC-E2D72D776A63</string>
+</dict>
+</plist>
