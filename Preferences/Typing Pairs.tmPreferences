@@ -11,24 +11,12 @@
 		<key>highlightPairs</key>
 		<array>
 			<array>
-				<string>(</string>
-				<string>)</string>
+				<string>{{</string>
+				<string>}}</string>
 			</array>
 			<array>
-				<string>{</string>
-				<string>}</string>
-			</array>
-			<array>
-				<string>[</string>
-				<string>]</string>
-			</array>
-			<array>
-				<string>“</string>
-				<string>”</string>
-			</array>
-			<array>
-				<string>&lt;</string>
-				<string>&gt;</string>
+				<string>/{% block \w+ %}/</string>
+				<string>/{% endblock(\s+\w+)? %}/</string>
 			</array>
 		</array>
 		<key>smartTypingPairs</key>
