@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{{ block.super }}</string>
+	<key>name</key>
+	<string>{{ block.super }}</string>
+	<key>scope</key>
+	<string>text.html.django</string>
+	<key>tabTrigger</key>
+	<string>super</string>
+	<key>uuid</key>
+	<string>3E2A1AA3-047B-4EF3-96E3-92AF7E9CF770</string>
+</dict>
+</plist>
