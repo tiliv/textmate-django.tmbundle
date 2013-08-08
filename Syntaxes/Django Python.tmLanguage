@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>django(\.[a-z]+){1,} </string>
+			<string>django(\.\w+)* </string>
 			<key>name</key>
 			<string>support.other.django.module</string>
 		</dict>
