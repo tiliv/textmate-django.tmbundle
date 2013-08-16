@@ -11,40 +11,112 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\b(template_name(_suffix)?|content_type|http_method_names|response_class|context_object_name|model|)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.generic</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(permanent|querystring|url)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.redirect</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(pk_url_kwarg|slug_field|slug_field_kwarg|template_name_field)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.detail</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(queryset|allow_empty|paginate_by|paginator_class)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.list</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(form_class|initial|success_url)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.edit</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(allow_future|date_field|make_object_list|(year|month|week|day)(_format)?)\b</string>
+							<key>name</key>
+							<string>support.attribute.django.view.date</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\b(template_name(_suffix)?|content_type|http_method_names|response_class|context_object_name|model|)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.generic</string>
+			<string>^\s{4}([a-z_]+)(?= = )</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.python</string>
+						</dict>
+					</array>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>\bget_(context_object_name|template_names)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.generic</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\bget_(redirect_url)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.redirect</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\bget_(slug_field|object)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.detail</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\bget_(queryset|allow_empty|paginate_by)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.list</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\bget_(form|form_class|form_kwargs|initial|success_url)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.edit</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\bget_(date_field|(year|month|week|day)(_format)?)\b</string>
+							<key>name</key>
+							<string>support.method.django.view.date</string>
+						</dict>
+					</array>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>\b(permanent|querystring|url)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.redirect</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(pk_url_kwarg|slug_field|slug_field_kwarg|template_name_field)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.detail</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(queryset|allow_empty|paginate_by|paginator_class)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.list</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(form_class|initial|success_url)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.edit</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(allow_future|date_field|make_object_list|(year|month|week|day)(_format)?)\b(?= = )</string>
-			<key>name</key>
-			<string>support.attribute.django.view.date</string>
+			<string>$^\s{4}(def) ([a-z_]+)\(</string>
 		</dict>
 		<dict>
 			<key>captures</key>
