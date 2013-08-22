@@ -379,9 +379,15 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;=\.)(keys|items|count|all|label_tag|auto_id|field|required|errors|super|id)\b</string>
+					<string>(?&lt;=\.)(keys|items|count|all|label_tag|auto_id|field|required|errors)\b</string>
 					<key>name</key>
-					<string>support.function.python</string>
+					<string>support.function.python.django</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;=\.)(id|super|counter0?)\b</string>
+					<key>name</key>
+					<string>support.attribute.python.django</string>
 				</dict>
 			</array>
 		</dict>
@@ -581,7 +587,7 @@
 									<key>comment</key>
 									<string>Add scope for django-supplied context names</string>
 									<key>match</key>
-									<string>\b(request|kwargs|perms|view|object_list|object|STATIC_URL|MEDIA_URL)\b</string>
+									<string>\b(request|kwargs|perms|view|object_list|object|forloop|STATIC_URL|MEDIA_URL)\b</string>
 									<key>name</key>
 									<string>support.variable.django.template</string>
 								</dict>
