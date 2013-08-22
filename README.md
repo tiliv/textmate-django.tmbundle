@@ -2,6 +2,11 @@
 
 Combination bundle for Django's Python and HTML grammars.
 
+## Install
+Clone/download this repository and place/symlink it to ``~/Library/Application Support/Avian/Bundles``.  Relaunch TextMate 2 (``⌃⌘Q``) to make certain that you're good to go.
+
+The grammars here include some extra scopes that you can leverage in theme customizations, or you can experiment with using my ["Soft" theme](https://github.com/tiliv/Soft-Theme.tmbundle), which I maintain for personal use.  It is fully featured and recognizes the Django-specific sub-scopes added by this package.
+
 ## Grammars
 The existing Django support bundles frustrate me.  Hopefully this one does a better job staying current and providing utility instead of stumbling blocks.
 
