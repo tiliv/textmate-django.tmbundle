@@ -379,7 +379,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;=\.)(keys|items|count|all|label_tag|auto_id|field|required|errors)\b</string>
+					<string>(?&lt;=\.)(keys|items|count|all|label_tag|auto_id|field|required|errors|first|last)\b</string>
 					<key>name</key>
 					<string>support.function.python.django</string>
 				</dict>
