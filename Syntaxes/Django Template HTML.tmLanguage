@@ -379,7 +379,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(?&lt;=\.)(keys|items|count|all|label_tag|field|required|errors|super|id)\b</string>
+					<string>(?&lt;=\.)(keys|items|count|all|label_tag|auto_id|field|required|errors|super|id)\b</string>
 					<key>name</key>
 					<string>support.function.python</string>
 				</dict>
