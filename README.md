@@ -38,5 +38,7 @@ Provides:
 * Recognition of filter syntax
 * Tags and variable references are properly applied when used inside of quoted HTML attribute values.
 
+Also provided are a several completions for tags.  Some of them come from the old grammar, but many of them were nearly unusable for poor choice of ``$1`` instead of ``$0`` where wrapped content belonged.  These are being added back as I find the time.
+
 #### TODOs
 TBD
