@@ -166,6 +166,33 @@
 			<string>support.function.django.model</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.reference.django.model</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.exception.python.django.model</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Exceptions that belong to the model classes</string>
+			<key>match</key>
+			<string>\b(\w+)\.(DoesNotExist|MultipleObjectsReturned)\b</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>These cover loose exceptions, possibly imported from django.core.exceptions</string>
+			<key>match</key>
+			<string>\b(DoesNotExist|MultipleObjectsReturned)\b</string>
+			<key>name</key>
+			<string>support.type.exception.python.django</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>source.python</string>
 		</dict>
