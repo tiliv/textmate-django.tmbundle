@@ -43,7 +43,7 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>\b(form_class|initial|success_url)\b</string>
+							<string>\b(form_class|initial|success_url|can_delete|extra|fields)\b</string>
 							<key>name</key>
 							<string>support.attribute.django.view.edit</string>
 						</dict>
