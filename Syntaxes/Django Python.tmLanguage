@@ -188,7 +188,7 @@
 			<key>comment</key>
 			<string>These cover loose exceptions, possibly imported from django.core.exceptions</string>
 			<key>match</key>
-			<string>\b(DoesNotExist|MultipleObjectsReturned)\b</string>
+			<string>\b(ObjectDoesNotExist|MultipleObjectsReturned)\b</string>
 			<key>name</key>
 			<string>support.type.exception.python.django</string>
 		</dict>
