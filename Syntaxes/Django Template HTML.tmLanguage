@@ -267,6 +267,11 @@
 			<string>({%) (endblock)(| \3) (%})</string>
 			<key>endCaptures</key>
 			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>meta.scope.django.template.tag.$2-line.$3</string>
+				</dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
@@ -295,11 +300,31 @@
 					<string>keyword.operator.django.template.tag</string>
 				</dict>
 			</dict>
+			<key>name</key>
+			<string>meta.scope.django.template.tag.$2.$3</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
 					<string>text.html.django</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\{% (.*script.*|axis_angular_dependencies|datatable_initialize) %\}</string>
+					<key>name</key>
+					<string>meta.scope.django.template.tag.$2.script</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\{% (.*style.*|css|scss) %\}</string>
+					<key>name</key>
+					<string>meta.scope.django.template.tag.$2.style</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\{% .* %\}</string>
+					<key>name</key>
+					<string>meta.scope.django.template.tag.$2.generic</string>
 				</dict>
 			</array>
 		</dict>
