@@ -229,7 +229,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.scope.django.template.tag.$2.$3</string>
+					<string>meta.scope.django.template.tag.$2-line.$3</string>
 				</dict>
 				<key>1</key>
 				<dict>
@@ -262,7 +262,7 @@
 			<key>comment</key>
 			<string>Block tags</string>
 			<key>contentName</key>
-			<string>meta.scope.django.template.$2-body.$3</string>
+			<string>meta.scope.django.template.tag.$2-body.$3</string>
 			<key>end</key>
 			<string>({%) (endblock)(| \3) (%})</string>
 			<key>endCaptures</key>
