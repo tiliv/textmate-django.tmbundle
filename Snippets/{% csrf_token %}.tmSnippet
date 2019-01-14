@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>{% csrf_token %}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>{% csrf_token %}</string>
 	<key>scope</key>

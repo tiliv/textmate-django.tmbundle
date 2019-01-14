@@ -6,6 +6,8 @@
 	<string>{% if $1 %}
     $0
 {% endif %}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>{% if %}</string>
 	<key>scope</key>

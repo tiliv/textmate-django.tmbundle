@@ -6,6 +6,8 @@
 	<string>{% comment %}
     $0
 {% endcomment %}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>keyEquivalent</key>
 	<string>^~#</string>
 	<key>name</key>

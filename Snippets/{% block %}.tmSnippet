@@ -6,6 +6,8 @@
 	<string>{% block $1 %}
     $0
 {% endblock $1 %}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>{% block %}</string>
 	<key>scope</key>

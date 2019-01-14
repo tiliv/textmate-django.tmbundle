@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>{% load $0 %}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>{% load %}</string>
 	<key>scope</key>

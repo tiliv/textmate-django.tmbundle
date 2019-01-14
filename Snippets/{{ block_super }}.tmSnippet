@@ -4,6 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>{{ block.super }}</string>
+	<key>isDisabled</key>
+	<true/>
 	<key>name</key>
 	<string>{{ block.super }}</string>
 	<key>scope</key>
